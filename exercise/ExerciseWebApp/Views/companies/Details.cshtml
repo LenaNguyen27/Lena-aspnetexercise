@@ -1,0 +1,50 @@
+﻿@model ExerciseWebApp.Models.company
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>company</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.is_Active)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.is_Active)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.company_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.company_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.create_date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.create_date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.number_of_employees)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.number_of_employees)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.company_id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

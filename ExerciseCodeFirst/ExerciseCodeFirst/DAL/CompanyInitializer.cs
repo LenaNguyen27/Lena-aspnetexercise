@@ -21,7 +21,7 @@ namespace ExerciseWebApp.DAL
 
            };
 
-            companies.ForEach(c => context.Companies.Add(c));
+            context.Companies.AddRange(companies);
             context.SaveChanges();
         }
         
